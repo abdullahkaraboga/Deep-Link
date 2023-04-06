@@ -14,6 +14,10 @@
 		7B2F49F829DF661100DFCE8B /* DeepLinkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2F49F729DF661100DFCE8B /* DeepLinkTests.swift */; };
 		7B2F4A0229DF661100DFCE8B /* DeepLinkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2F4A0129DF661100DFCE8B /* DeepLinkUITests.swift */; };
 		7B2F4A0429DF661100DFCE8B /* DeepLinkUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2F4A0329DF661100DFCE8B /* DeepLinkUITestsLaunchTests.swift */; };
+		7B2F4A1329DF67CB00DFCE8B /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2F4A1229DF67CA00DFCE8B /* Tab.swift */; };
+		7B2F4A1829DF69DF00DFCE8B /* HomeStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2F4A1729DF69DF00DFCE8B /* HomeStack.swift */; };
+		7B2F4A1A29DF69ED00DFCE8B /* FavoriteStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2F4A1929DF69ED00DFCE8B /* FavoriteStack.swift */; };
+		7B2F4A1E29DF6A1A00DFCE8B /* SettingsStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2F4A1D29DF6A1A00DFCE8B /* SettingsStack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		7B2F49FD29DF661100DFCE8B /* DeepLinkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeepLinkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B2F4A0129DF661100DFCE8B /* DeepLinkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepLinkUITests.swift; sourceTree = "<group>"; };
 		7B2F4A0329DF661100DFCE8B /* DeepLinkUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepLinkUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7B2F4A1229DF67CA00DFCE8B /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
+		7B2F4A1729DF69DF00DFCE8B /* HomeStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStack.swift; sourceTree = "<group>"; };
+		7B2F4A1929DF69ED00DFCE8B /* FavoriteStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteStack.swift; sourceTree = "<group>"; };
+		7B2F4A1D29DF6A1A00DFCE8B /* SettingsStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsStack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +102,8 @@
 		7B2F49E529DF660E00DFCE8B /* DeepLink */ = {
 			isa = PBXGroup;
 			children = (
+				7B2F4A1129DF676500DFCE8B /* View */,
+				7B2F4A1029DF675C00DFCE8B /* Model */,
 				7B2F49E629DF660E00DFCE8B /* DeepLinkApp.swift */,
 				7B2F49E829DF660E00DFCE8B /* ContentView.swift */,
 				7B2F49EA29DF661100DFCE8B /* Assets.xcassets */,
@@ -125,6 +135,32 @@
 				7B2F4A0329DF661100DFCE8B /* DeepLinkUITestsLaunchTests.swift */,
 			);
 			path = DeepLinkUITests;
+			sourceTree = "<group>";
+		};
+		7B2F4A1029DF675C00DFCE8B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7B2F4A1429DF699E00DFCE8B /* NavStacks */,
+				7B2F4A1229DF67CA00DFCE8B /* Tab.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7B2F4A1129DF676500DFCE8B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7B2F4A1429DF699E00DFCE8B /* NavStacks */ = {
+			isa = PBXGroup;
+			children = (
+				7B2F4A1729DF69DF00DFCE8B /* HomeStack.swift */,
+				7B2F4A1929DF69ED00DFCE8B /* FavoriteStack.swift */,
+				7B2F4A1D29DF6A1A00DFCE8B /* SettingsStack.swift */,
+			);
+			path = NavStacks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +293,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B2F4A1329DF67CB00DFCE8B /* Tab.swift in Sources */,
+				7B2F4A1E29DF6A1A00DFCE8B /* SettingsStack.swift in Sources */,
+				7B2F4A1829DF69DF00DFCE8B /* HomeStack.swift in Sources */,
 				7B2F49E929DF660E00DFCE8B /* ContentView.swift in Sources */,
+				7B2F4A1A29DF69ED00DFCE8B /* FavoriteStack.swift in Sources */,
 				7B2F49E729DF660E00DFCE8B /* DeepLinkApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
