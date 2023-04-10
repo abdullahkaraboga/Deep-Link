@@ -7,14 +7,16 @@
 
 import SwiftUI
 
-struct SettingsStack: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+enum SettingsStack : String, CaseIterable {
+    case myProfile = "My Profile"
+    case dataUsage = "Data Usage"
+    case privacyPolicy = "Privacy Policy"
+    case termsOfService = "Ters of Service"
 
-struct SettingsStack_Previews: PreviewProvider {
-    static var previews: some View {
-        SettingsStack()
+    
+    static func convert(from: String)-> Self? {
+        return self.allCases.first { tab in
+            tab.rawValue.lowercased() == from.lowercased()
+        }
     }
 }

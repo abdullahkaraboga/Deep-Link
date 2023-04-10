@@ -7,14 +7,15 @@
 
 import SwiftUI
 
-struct HomeStack: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
-
-struct HomeStack_Previews: PreviewProvider {
-    static var previews: some View {
-        HomeStack()
+enum HomeStack : String, CaseIterable {
+    case myPost = "My Posts"
+    case oldPost = "Old Posts"
+    case latestPost = "Latest Posts"
+    case deletedPost = "Deleted Posts"
+    
+    static func convert(from: String)-> Self? {
+        return self.allCases.first { tab in
+            tab.rawValue.lowercased() == from.lowercased()
+        }
     }
 }

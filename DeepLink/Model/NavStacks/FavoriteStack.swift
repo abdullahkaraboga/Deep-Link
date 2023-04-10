@@ -7,14 +7,15 @@
 
 import SwiftUI
 
-struct FavoriteStack: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+enum FavoriteStack : String, CaseIterable {
+    case user1 = "User 1"
+    case user2 = "User 2"
+    case user3 = "User 3"
 
-struct FavoriteStack_Previews: PreviewProvider {
-    static var previews: some View {
-        FavoriteStack()
+    
+    static func convert(from: String)-> Self? {
+        return self.allCases.first { tab in
+            tab.rawValue.lowercased() == from.lowercased()
+        }
     }
 }

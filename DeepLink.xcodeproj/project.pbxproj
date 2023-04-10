@@ -18,6 +18,8 @@
 		7B2F4A1829DF69DF00DFCE8B /* HomeStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2F4A1729DF69DF00DFCE8B /* HomeStack.swift */; };
 		7B2F4A1A29DF69ED00DFCE8B /* FavoriteStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2F4A1929DF69ED00DFCE8B /* FavoriteStack.swift */; };
 		7B2F4A1E29DF6A1A00DFCE8B /* SettingsStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2F4A1D29DF6A1A00DFCE8B /* SettingsStack.swift */; };
+		9C72B3F429DFF61800ACB557 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C72B3F329DFF61800ACB557 /* AppData.swift */; };
+		9C72B3F829DFFA8800ACB557 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C72B3F729DFFA8800ACB557 /* Home.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,9 @@
 		7B2F4A1729DF69DF00DFCE8B /* HomeStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStack.swift; sourceTree = "<group>"; };
 		7B2F4A1929DF69ED00DFCE8B /* FavoriteStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteStack.swift; sourceTree = "<group>"; };
 		7B2F4A1D29DF6A1A00DFCE8B /* SettingsStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsStack.swift; sourceTree = "<group>"; };
+		9C72B3F329DFF61800ACB557 /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
+		9C72B3F729DFFA8800ACB557 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Home.swift; path = DeepLink/View/Home.swift; sourceTree = SOURCE_ROOT; };
+		9C72B3F929DFFE3A00ACB557 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +107,8 @@
 		7B2F49E529DF660E00DFCE8B /* DeepLink */ = {
 			isa = PBXGroup;
 			children = (
-				7B2F4A1129DF676500DFCE8B /* View */,
+				7BAD790C29E49A4D00EEC923 /* View */,
+				9C72B3F929DFFE3A00ACB557 /* Info.plist */,
 				7B2F4A1029DF675C00DFCE8B /* Model */,
 				7B2F49E629DF660E00DFCE8B /* DeepLinkApp.swift */,
 				7B2F49E829DF660E00DFCE8B /* ContentView.swift */,
@@ -142,15 +148,9 @@
 			children = (
 				7B2F4A1429DF699E00DFCE8B /* NavStacks */,
 				7B2F4A1229DF67CA00DFCE8B /* Tab.swift */,
+				9C72B3F329DFF61800ACB557 /* AppData.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		7B2F4A1129DF676500DFCE8B /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		7B2F4A1429DF699E00DFCE8B /* NavStacks */ = {
@@ -161,6 +161,14 @@
 				7B2F4A1D29DF6A1A00DFCE8B /* SettingsStack.swift */,
 			);
 			path = NavStacks;
+			sourceTree = "<group>";
+		};
+		7BAD790C29E49A4D00EEC923 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9C72B3F729DFFA8800ACB557 /* Home.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,6 +307,8 @@
 				7B2F49E929DF660E00DFCE8B /* ContentView.swift in Sources */,
 				7B2F4A1A29DF69ED00DFCE8B /* FavoriteStack.swift in Sources */,
 				7B2F49E729DF660E00DFCE8B /* DeepLinkApp.swift in Sources */,
+				9C72B3F829DFFA8800ACB557 /* Home.swift in Sources */,
+				9C72B3F429DFF61800ACB557 /* AppData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,6 +470,7 @@
 				DEVELOPMENT_TEAM = XRR5P3RD3X;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DeepLink/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -489,6 +500,7 @@
 				DEVELOPMENT_TEAM = XRR5P3RD3X;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DeepLink/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
